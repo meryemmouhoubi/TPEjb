@@ -18,7 +18,7 @@ public class TestEmploye {
 		jndiProperties.put(Context.PROVIDER_URL, "http-remoting://localhost:8080");
 		final Context context = new InitialContext(jndiProperties);
 
-		return (IDao<Etudiant>) context.lookup("ejb:/G4Serveur/G4EmS!dao.IDao");
+		return (IDao<Etudiant>) context.lookup("ejb:EARProjet/Serveur/EtudiantService!dao.IDao");
 
 	}
 
